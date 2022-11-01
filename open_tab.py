@@ -12,7 +12,7 @@ while True:
 
   c = db.cursor()
   update=db.cursor()
-  sql1=('select * from hastalar')
+  sql1=('select * from hastalar where wp_msj is null')
   c.execute(sql1)
   print("Hasta bekleniyor.....")
   for row in c:
